@@ -1,0 +1,2 @@
+# MITT-AzureAutomationAccounts
+MITT-AzureAutomationAccounts
