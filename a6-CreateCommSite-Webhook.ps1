@@ -33,8 +33,8 @@ if ($WebhookData) {
 
 	New-SPOSite -Title $title -Template "STS#3" -Owner $owner -Url $siteUrl -StorageQuota ($quotaInGB * 1024) 
 
-	#Write-Output "Enable external sharing without anonymous links"
-	#Set-SPOSite -Identity $siteUrl -SharingCapability ExternalUserSharingOnly
+	Write-Output "Enable external sharing without anonymous links"
+	Set-SPOSite -Identity $siteUrl -SharingCapability ExternalUserSharingOnly
 
 	Write-Output "Created $siteUrl"
 }

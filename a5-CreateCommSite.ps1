@@ -7,11 +7,11 @@
 param
 (
 	[Parameter (Mandatory=$true)]
-	[string] $title = "Vienna30",
+	[string] $title = "newsite01",
 	[Parameter (Mandatory=$false)]
 	[int] $quotaInGB = 1,
 	[Parameter (Mandatory=$false)]
-	[string] $owner = "admin@M365x251516.onmicrosoft.com"
+	[string] $owner = "admin@<sometenant>.onmicrosoft.com"
 )
 
 Write-Output "Starting CreateCommSite..."
